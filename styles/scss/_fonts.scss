@@ -1,0 +1,5 @@
+@import "_mixins/font-face";
+
+
+@include font-face("droidReg", "../../fonts/DroidSans/DroidSansRegular/DroidSansRegular");
+@include font-face("droidBold", "../../fonts/DroidSans/DroidSansBold/DroidSansBold");

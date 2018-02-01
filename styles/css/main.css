@@ -1,0 +1,202 @@
+@font-face {
+  font-family: "droidReg";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/DroidSans/DroidSansRegular/DroidSansRegular.eot");
+  src: url("../../fonts/DroidSans/DroidSansRegular/DroidSansRegular.eot?#iefix") format("embedded-opentype"), url("../../fonts/DroidSans/DroidSansRegular/DroidSansRegular.woff") format("woff"), url("../../fonts/DroidSans/DroidSansRegular/DroidSansRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "droidBold";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../../fonts/DroidSans/DroidSansBold/DroidSansBold.eot");
+  src: url("../../fonts/DroidSans/DroidSansBold/DroidSansBold.eot?#iefix") format("embedded-opentype"), url("../../fonts/DroidSans/DroidSansBold/DroidSansBold.woff") format("woff"), url("../../fonts/DroidSans/DroidSansBold/DroidSansBold.ttf") format("truetype"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html, body {
+  height: 100%; }
+
+body {
+  background-color: #fff;
+  min-width: 320px;
+  font: 12px/1em 'droidReg', 'Sans', 'Arial';
+  color: #666666; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input[type="submit"], button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none;
+  color: #666666; }
+
+img {
+  max-width: 100%; }
+
+button, input {
+  padding: 0;
+  border: none; }
+  button:focus, input:focus {
+    outline: none; }
+
+.wrapper {
+  min-height: calc(100vh - 257px); }
+
+.container {
+  width: 100%;
+  max-width: 980px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 20px; }
+  .container::after {
+    content: "";
+    display: block;
+    clear: both; }
+
+#header {
+  border-top: 2px solid #ff5050;
+  -webkit-box-shadow: 0 0 3px;
+  box-shadow: 0 0 3px; }
+  #header .logo {
+    background-color: #ff5050;
+    padding: 8px 16px;
+    float: left; }
+  #header .header-group {
+    padding-left: 169px; }
+  #header .top-component {
+    position: relative;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 15px calc((100vw - 980px) / 2 + 20px) 1rem 0;
+    margin-right: calc((-100vw + 980px) / 2 - 20px); }
+    #header .top-component .local, #header .top-component .currency {
+      display: inline-block;
+      position: relative; }
+      #header .top-component .local span, #header .top-component .currency span {
+        color: #ff5050; }
+      #header .top-component .local ul, #header .top-component .currency ul {
+        display: none;
+        position: absolute;
+        z-index: 1000;
+        left: 57px;
+        border: 1px solid #ff5050;
+        padding: 10px 20px 10px 0;
+        background-color: #ff5050;
+        line-height: 20px; }
+    #header .top-component .account-group {
+      float: right; }
+      #header .top-component .account-group ul > li {
+        display: inline-block; }
+        #header .top-component .account-group ul > li a {
+          display: block;
+          position: relative;
+          padding: 0 0.5rem;
+          text-transform: capitalize; }
+        #header .top-component .account-group ul > li a::after {
+          content: '|';
+          position: absolute;
+          top: 8px;
+          left: -5px;
+          width: 1px;
+          height: 16px;
+          margin-top: -8px; }
+        #header .top-component .account-group ul > li:first-child a:after {
+          content: ''; }
+  #header .bottom-component::after {
+    content: "";
+    display: block;
+    clear: both; }
+  #header .bottom-component .horizontal-nav {
+    padding-top: 25px;
+    float: left; }
+    #header .bottom-component .horizontal-nav ul > li {
+      display: inline-block;
+      font-family: droidBold;
+      font-size: 15px;
+      text-transform: uppercase;
+      margin-left: 1em; }
+      #header .bottom-component .horizontal-nav ul > li a {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease; }
+    #header .bottom-component .horizontal-nav ul li + li {
+      margin-left: 37px; }
+    #header .bottom-component .horizontal-nav ul li > a:hover {
+      color: #ff5050; }
+  #header .bottom-component .basket-search {
+    float: right;
+    margin-top: 11px; }
+    #header .bottom-component .basket-search li {
+      display: inline-block;
+      line-height: 0; }
+      #header .bottom-component .basket-search li a {
+        display: inline-block;
+        vertical-align: middle; }
+      #header .bottom-component .basket-search li span, #header .bottom-component .basket-search li img {
+        vertical-align: middle; }
+    #header .bottom-component .basket-search .input-search {
+      width: 0;
+      border: 1px solid #e7e7e7;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
+    #header .bottom-component .basket-search .btn-search {
+      background-color: #fff; }
+    #header .bottom-component .basket-search .active-search {
+      width: 100%; }
+
+#footer {
+  height: 205px;
+  background-color: #efefef;
+  padding-top: 34px; }
+  #footer .container > * {
+    display: inline-block;
+    width: 100%;
+    max-width: 160px;
+    padding: 0 14px;
+    vertical-align: top; }
+  #footer h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    padding-bottom: 11px;
+    border-bottom: 1px solid #dedddd; }
+  #footer ul {
+    border-top: 1px solid #fff;
+    padding-left: 15px; }
+  #footer li {
+    padding: 7px 0;
+    list-style: square;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  #footer li:hover {
+    margin-left: 5px;
+    color: #ff5050; }
+    #footer li:hover a {
+      color: #ff5050; }
+  #footer .payment-section {
+    padding-right: 0; }
+    #footer .payment-section p {
+      font-size: 13px;
+      padding-top: 22px;
+      border-top: 1px solid #fff; }
+    #footer .payment-section ul {
+      border: none;
+      padding: 0;
+      margin-top: 19px; }
+    #footer .payment-section li {
+      display: inline-block; }
+      #footer .payment-section li:hover {
+        margin-left: 0; }

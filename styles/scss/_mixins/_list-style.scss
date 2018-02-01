@@ -1,0 +1,16 @@
+@import "../vars";
+
+@mixin list-style{
+	&{
+		padding: 7px 0;
+		list-style: square;
+		transition: all 0.3s ease;
+	}
+	&:hover{
+		margin-left: 5px;
+		color: $red;
+		a{
+			color: $red;
+		}
+	}
+}
