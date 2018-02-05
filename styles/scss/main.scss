@@ -18,7 +18,9 @@
 	padding: 0 20px;
 	@include clearfix();
 }
-
+.classic-list{
+	@include list-style();
+}
 
 //END COMMON STYLES
 
@@ -134,55 +136,78 @@
 	
 }
 #footer{
-	height: 205px;
+	height: 257px;
 	background-color: $footer-bg;
-	padding-top: 34px;
+	.top-component{
+		height: 205px;
+		padding-top: 34px;
+		.wrap{
+			margin: 0 -14px;
+			font-size: 0;
+		}
+		.wrap > *{
+			display: inline-block;
+			width: 20%;
+			padding: 0 14px;
+			vertical-align: top;
+			font-size: 12px;
+		}
+		h3{
+			font-size: 15px;
+			text-transform: uppercase;
+			padding-bottom: 11px;
+			border-bottom: 1px solid #dedddd;
 
-	.container > *{
-		display: inline-block;
-		width: 100%;
-		max-width: 160px;
-		padding: 0 14px;
-		vertical-align: top;
-	}
-	h3{
-		font-size: 15px;
-		text-transform: uppercase;
-		padding-bottom: 11px;
-		border-bottom: 1px solid #dedddd;
-
-	}
-	ul{
-		border-top: 1px solid #fff;
-		padding-left: 15px;
-	}
-	li{
-		@include list-style();
-	}
-	.payment-section{
-		padding-right: 0;
-		p{
-			font-size: 13px;
-			padding-top: 22px;
-			border-top: 1px solid #fff;
 		}
 		ul{
-			border: none;
-			padding: 0;
-			margin-top: 19px;
+			border-top: 1px solid #fff;
+			padding-left: 15px;
 		}
-		li{
-			display: inline-block;
-			&:hover{
-				margin-left: 0;
+		.payment-section{
+			padding-right: 0;
+			p{
+				font-size: 13px;
+				padding-top: 22px;
+				border-top: 1px solid #fff;
+			}
+			ul{
+				border: none;
+				padding: 0;
+				margin: 19px -6px 0;
+			}
+			li{
+				display: inline-block;
+				margin-left: 6px;
+				&:hover{
+					margin-left: 0;
+				}
 			}
 		}
 	}
-
+	.bottom-component{
+		height: 52px;
+		background-color: #292929;
+		.container{
+			height: inherit;
+		}
+		.copyright-text{
+			float: left;
+			line-height: 52px;
+		}
+		.social{
+			float: right;
+			line-height: 52px;
+			li{
+				display: inline-block;
+				margin-left: 25px;
+			}
+			a{
+				color: $red;
+				font-size: 16px;
+			}
+		}
+	}
 }
-
-
-
 
 
 

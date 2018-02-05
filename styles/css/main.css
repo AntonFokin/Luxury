@@ -66,12 +66,25 @@ button, input {
     display: block;
     clear: both; }
 
+.classic-list li {
+  padding: 7px 0;
+  list-style: square;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.classic-list li:hover {
+  margin-left: 5px;
+  color: #ff5252; }
+  .classic-list li:hover a {
+    color: #ff5252; }
+
 #header {
-  border-top: 2px solid #ff5050;
+  border-top: 2px solid #ff5252;
   -webkit-box-shadow: 0 0 3px;
   box-shadow: 0 0 3px; }
   #header .logo {
-    background-color: #ff5050;
+    background-color: #ff5252;
     padding: 8px 16px;
     float: left; }
   #header .header-group {
@@ -85,7 +98,7 @@ button, input {
       display: inline-block;
       position: relative; }
       #header .top-component .local span, #header .top-component .currency span {
-        color: #ff5050; }
+        color: #ff5252; }
       #header .top-component .local ul, #header .top-component .currency ul {
         display: none;
         position: absolute;
@@ -134,7 +147,7 @@ button, input {
     #header .bottom-component .horizontal-nav ul li + li {
       margin-left: 37px; }
     #header .bottom-component .horizontal-nav ul li > a:hover {
-      color: #ff5050; }
+      color: #ff5252; }
   #header .bottom-component .basket-search {
     float: right;
     margin-top: 11px; }
@@ -158,45 +171,57 @@ button, input {
       width: 100%; }
 
 #footer {
-  height: 205px;
-  background-color: #efefef;
-  padding-top: 34px; }
-  #footer .container > * {
-    display: inline-block;
-    width: 100%;
-    max-width: 160px;
-    padding: 0 14px;
-    vertical-align: top; }
-  #footer h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    padding-bottom: 11px;
-    border-bottom: 1px solid #dedddd; }
-  #footer ul {
-    border-top: 1px solid #fff;
-    padding-left: 15px; }
-  #footer li {
-    padding: 7px 0;
-    list-style: square;
-    -webkit-transition: all 0.3s ease;
-    -o-transition: all 0.3s ease;
-    transition: all 0.3s ease; }
-  #footer li:hover {
-    margin-left: 5px;
-    color: #ff5050; }
-    #footer li:hover a {
-      color: #ff5050; }
-  #footer .payment-section {
-    padding-right: 0; }
-    #footer .payment-section p {
-      font-size: 13px;
-      padding-top: 22px;
-      border-top: 1px solid #fff; }
-    #footer .payment-section ul {
-      border: none;
-      padding: 0;
-      margin-top: 19px; }
-    #footer .payment-section li {
-      display: inline-block; }
-      #footer .payment-section li:hover {
-        margin-left: 0; }
+  height: 257px;
+  background-color: #efefef; }
+  #footer .top-component {
+    height: 205px;
+    padding-top: 34px; }
+    #footer .top-component .wrap {
+      margin: 0 -14px;
+      font-size: 0; }
+    #footer .top-component .wrap > * {
+      display: inline-block;
+      width: 20%;
+      padding: 0 14px;
+      vertical-align: top;
+      font-size: 12px; }
+    #footer .top-component h3 {
+      font-size: 15px;
+      text-transform: uppercase;
+      padding-bottom: 11px;
+      border-bottom: 1px solid #dedddd; }
+    #footer .top-component ul {
+      border-top: 1px solid #fff;
+      padding-left: 15px; }
+    #footer .top-component .payment-section {
+      padding-right: 0; }
+      #footer .top-component .payment-section p {
+        font-size: 13px;
+        padding-top: 22px;
+        border-top: 1px solid #fff; }
+      #footer .top-component .payment-section ul {
+        border: none;
+        padding: 0;
+        margin: 19px -6px 0; }
+      #footer .top-component .payment-section li {
+        display: inline-block;
+        margin-left: 6px; }
+        #footer .top-component .payment-section li:hover {
+          margin-left: 0; }
+  #footer .bottom-component {
+    height: 52px;
+    background-color: #292929; }
+    #footer .bottom-component .container {
+      height: inherit; }
+    #footer .bottom-component .copyright-text {
+      float: left;
+      line-height: 52px; }
+    #footer .bottom-component .social {
+      float: right;
+      line-height: 52px; }
+      #footer .bottom-component .social li {
+        display: inline-block;
+        margin-left: 25px; }
+      #footer .bottom-component .social a {
+        color: #ff5252;
+        font-size: 16px; }

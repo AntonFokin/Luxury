@@ -1,12 +1,12 @@
 @import "../vars";
 
 @mixin list-style{
-	&{
+	li{
 		padding: 7px 0;
 		list-style: square;
 		transition: all 0.3s ease;
 	}
-	&:hover{
+	li:hover{
 		margin-left: 5px;
 		color: $red;
 		a{
