@@ -1,0 +1,141 @@
+@import "vars";
+@media(max-width: 960px){
+	#header{
+		.logo{
+			height: 65px;
+		}
+		.header-group{
+			padding-left: 100px;
+		}
+		.top-component{
+			border-bottom: none;
+			margin-right: auto;
+			padding: 27px 97px 1rem 0;
+			text-align: center;
+			.account-info, .s-btn{
+				display: block;
+			}
+			.account-group{
+				position: absolute;
+				right: -110%;
+				top: 66px;
+				width: 400px;
+				padding-top: 25px;
+				border: 1px solid #e7e7e7;
+				overflow: hidden;
+				background-color: #fff;
+				z-index: 99;
+				ul > li{
+					display: block;
+					padding: 0 40px 20px;
+					a::after{
+						content: '';
+					}
+				}
+			}
+
+		}
+		.bottom-component{
+			position: absolute;
+			right: -110%;
+			text-align: center;
+			top: 66px;
+			padding-bottom: 20px;
+			border: 1px solid #e7e7e7;
+			width: 400px;
+			z-index: 99;
+			background-color: #fff;
+			.horizontal-nav{
+				float: none;
+				margin: 0 auto;
+				ul{
+					li{
+						display: block;
+						margin: 0;
+						padding: 0 40px 20px;
+					}
+					li + li{
+						margin: 0;
+					}
+				}
+
+			}
+			.basket-search{
+				float: none;
+			}
+		}
+		.active-m-menu{
+			right: 0 !important;
+		}
+	}
+	#footer{
+		.top-component{
+			height: 415px;
+			.newsletter-section{
+				width: 50%;
+			}
+			.payment-section{
+				width: 50%;
+				text-align: center;
+				padding-right: 14px;
+			}
+			.nav-wrap{
+				overflow: auto;
+				width: 100%;
+				margin-top: 80px;
+				text-align: center;
+			}
+		}
+	}
+}
+@media(max-width: 667px){
+	#header {
+		.top-component {
+			.account-group {
+				width: 100%;
+			}
+		}
+		.bottom-component {
+			width: 100%;
+		}
+	}
+	#footer{
+		.top-component{
+			height: 728px;
+			.newsletter-section{
+				width: 100%;
+				text-align: center;
+				margin-bottom: 40px;
+			}
+			.payment-section{
+				width: 100%;
+				text-align: center;
+			}
+			.nav-wrap{
+				overflow: auto;
+				width: 100%;
+				margin-top: 80px;
+				text-align: center;
+				.information-section, .our-support-section{
+					width: 50%;
+				}
+				.our-service-section{
+					display: block;
+					width: 100%;
+					margin-top: 50px;
+				}
+			}
+		}
+		.bottom-component{
+			height: 90px;
+			.left-container{
+				font-size: 8px;
+			}
+			.left-container, .right-container{
+				width: 100%;
+				display: block;
+				text-align: center;
+			}
+		}
+	}
+}
