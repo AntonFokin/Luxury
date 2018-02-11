@@ -95,6 +95,11 @@ button, input {
   .classic-list li:hover a {
     color: #ff5252; }
 
+.classic-border {
+  -webkit-box-shadow: 0 0 2px;
+  box-shadow: 0 0 2px;
+  border: 4px solid #fff; }
+
 #header {
   border-top: 2px solid #ff5252;
   -webkit-box-shadow: 0 0 3px;
@@ -265,8 +270,9 @@ button, input {
 #main {
   padding: 38px 0 32px; }
   #main #nav-side {
-    display: inline-block;
-    width: 237px; }
+    float: left;
+    width: 235px;
+    padding-right: 35px; }
     #main #nav-side .category-component {
       margin-bottom: 26px; }
     #main #nav-side .price-component {
@@ -310,6 +316,20 @@ button, input {
       -webkit-box-shadow: 0 0 2px;
       box-shadow: 0 0 2px;
       border: 4px solid #fff; }
+  #main #main-section {
+    overflow-x: hidden;
+    padding: 0 1px; }
+    #main #main-section .girls-grid .grid {
+      margin: 0 -5.5px; }
+      #main #main-section .girls-grid .grid::after {
+        content: "";
+        display: block;
+        clear: both; }
+      #main #main-section .girls-grid .grid li {
+        float: left;
+        padding: 5.5px 5.5px; }
+        #main #main-section .girls-grid .grid li a {
+          display: block; }
 
 #footer {
   background-color: #efefef; }

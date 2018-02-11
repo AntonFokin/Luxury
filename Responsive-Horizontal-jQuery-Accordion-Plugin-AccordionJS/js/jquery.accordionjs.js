@@ -13,7 +13,7 @@
     var _selfId = "#"+_self[0].id;
     var defaults = {
       steps: [],
-      keyNavigation: false
+      keyNavigation: true
     };
     var _settings = $.extend(defaults, options);
 
@@ -21,7 +21,7 @@
     ** BEGIN: Private functions.
     */
 
-    function pad(n, w) { return Array(Math.max(w - String(n).length +1, 0)).join(0)+n; }
+    function pad(n, w) { return Array(Math.max(w - String(n).length + 1, 0)).join(0)+n; }
 
     function _getStepById(userStepId) {
       var _internalStep = userStepId - 1;
@@ -128,7 +128,7 @@
 
     function _init() {
       $(_selfId).addClass("accordionjs");
-      $(_selfId+" li").each(function(index, node){
+      $(_selfId + " li").each(function(index, node){
         var step = {
           number: index,
           title: "Step "+index,
@@ -136,7 +136,7 @@
           completed: false,
           status: "incomplete",
           selected: false
-        }
+        };
         
         step.title    = ($(node).data("title")    ?  $(node).data("title")    : "Step " + (step.number+1));
         step.required = ($(node).data("required") ?  $(node).data("required") : false);
@@ -171,7 +171,7 @@
       }
 
       return ++_selectedStepId; //Normalise for 0 indexed arrays.
-    }
+    };
 
 
     /*!
@@ -183,14 +183,14 @@
       $(".accordionjs-title:eq("+(_internalStep)+") i:first").removeClass("fa-square-o")
                                                              .removeClass("fa-minus-square-o")
                                                              .addClass("fa-check-square-o");
-    }
+    };
 
     this.enable = function(stepId){
       var _internalStep = _getStepById(stepId);
       $(".accordionjs-title:eq("+(_internalStep)+") i:first").removeClass("fa-lock")
                                                              .addClass("fa-square-o");
       $(".accordionjs-select:eq("+(_internalStep)+")").removeAttr("disabled");
-    }
+    };
 
     this.disable = function(stepId){
       var _internalStep = _getStepById(stepId);
@@ -200,7 +200,7 @@
                                                              .addClass("fa-lock");
 
       $(".accordionjs-select:eq("+(_internalStep)+")").attr("disabled", "disabled");
-    }
+    };
 
     /*
     ** BEGIN: Initialise
@@ -214,7 +214,6 @@
     $(window).resize(function(e){
       setSizes();
     });
-
     return this;
   };
 }( jQuery) );
