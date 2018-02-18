@@ -29,6 +29,17 @@
 	box-shadow: 0 0 2px;
 	border: 4px solid #fff;
 }
+.stars{
+	ul{
+		display: inline-block;
+		margin: 0 auto;
+		@include clearfix();
+	}
+	li{
+		display: inline-block;
+	}
+	margin-bottom: 8px;
+}
 //END COMMON STYLES
 
 #header{
@@ -206,7 +217,7 @@
 			}
 		}
 	}
-	
+
 }
 #breadcrumb-section{
 	background-color: #f4f4f4;
@@ -265,12 +276,6 @@
 					display: inline-block;
 					vertical-align: top;
 				}
-				.stars{
-					li{
-						display: inline-block;
-					}
-					margin-bottom: 8px;
-				}
 				a{
 					h4{
 						font-size: 11px;
@@ -298,16 +303,56 @@
 	}
 	#main-section{
 		overflow-x: hidden;
-		padding: 0 1px;
+		padding: 0 1px 100px;
 		.girls-grid{
 			.grid{
-				@include clearfix();
 				margin: 0 -5.5px;
-				li{
+				.item{
 					float: left;
 					padding: 5.5px 5.5px;
+					position: relative;
+					width: 33.3%;
 					a{
 						display: block;
+					}
+					.wrap{
+						top: 5.5px;
+						left: 5.5px;
+						right: 5.5px;
+						padding-top: 250px;
+						position: absolute;
+						text-align: center;
+						box-shadow: 0 0 6px;
+						border: 4px solid #fff;
+						z-index: 20;
+						opacity: 0;
+						transition: all 0.3s ease;
+					}
+					&:hover{
+						.wrap{
+							opacity: 1;
+						}
+					}
+					.info{
+						padding: 16px 10px;
+						background-color: #fff;
+					}
+					.head{
+						@include clearfix();
+						border-bottom: 1px solid $font-color;
+						h4{
+							font-size: 12px;
+							text-transform: uppercase;
+							color: $font-color;
+						}
+					}
+					.bottom-info{
+						& > *{
+							display: inline-block;
+						}
+						.basket{
+							border-right: 1px solid $font-color;
+						}
 					}
 				}
 			}
