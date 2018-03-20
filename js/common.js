@@ -36,8 +36,6 @@ $(document).ready(function() {
 		$(".active-search").removeClass("active-search");
 		$(".account-group").removeClass("active-m-menu")
 	});
-
-
 // SMOOTH SCROLLING
 //	$("").on("click", "a", function (event) {
 //		event.preventDefault();

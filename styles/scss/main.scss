@@ -3,6 +3,7 @@
 @import "reset";
 @import "_mixins/clearfix";
 @import "_mixins/list-style";
+@import "liteaccordion";
 
 // START COMMON STYLES
 
@@ -62,22 +63,44 @@
 		border-bottom: 1px solid #e7e7e7;
 		padding: 15px calc((100vw - 980px) / 2 + 20px) 1rem 0;
 		margin-right: $negative-margin;
-		.local, .currency{
+		.lists-wrap{
+			display: inline-block;
+			margin: 0 auto;
+		}
+		.localization, .currency{
+			p{
+				vertical-align: middle;
+			}
+			img{
+				vertical-align: middle;
+			}
 			display: inline-block;
 			position: relative;
-			span{
+			a{
 				color: $red;
 			}
 			ul{
 				display: none;
 				position: absolute;
 				z-index: 1000;
-				left: 57px;
+				right: 0;
+				left: auto;
+				top: 100%;
 				border: 1px solid #ff5050;
-				padding: 10px 20px 10px 0;
-				background-color: #ff5050;
+				padding: 10px 20px;
+				background-color: #fff;
 				line-height: 20px;
+				min-width: 60px;
+				text-align: center;
 			}
+			&:hover{
+				ul{
+					display: block;
+				}
+			}
+		}
+		.currency{
+			margin-left: 20px;
 		}
 		.account-group{
 			float: right ;
@@ -305,7 +328,9 @@
 		overflow-x: hidden;
 		padding: 0 1px 100px;
 		.girls-grid{
+			@include clearfix();
 			.grid{
+				@include clearfix();
 				margin: 0 -5.5px;
 				.item{
 					float: left;

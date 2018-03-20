@@ -139,3 +139,27 @@
 		}
 	}
 }
+@media(max-width: 480px){
+	#header {
+		.top-component {
+			padding: 15px 73px 1rem 0;
+			.s-btn{
+				right: 20px;
+			}
+			.account-info{
+				right: 65px;
+			}
+		}
+		.lists-wrap {
+			.localization, .currency {
+				display: block;
+			}
+			.currency{
+				margin-left: 0;
+			}
+			.localization {
+				margin-bottom: 10px;
+			}
+		}
+	}
+}
