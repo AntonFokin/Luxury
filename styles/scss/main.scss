@@ -467,12 +467,6 @@
 					padding: 5.5px 5.5px;
 					position: relative;
 					width: 33.3%;
-					.image-wrap{
-						display: block;
-						position: relative;
-						img{
-							min-width: 100%;
-						}
 					}
 					.sale-label{
 						position: absolute;
@@ -508,21 +502,25 @@
 						}
 					}
 					.wrap{
-						top: 5.5px;
-						left: 5.5px;
-						right: 5.5px;
-						padding-top: 100%;
-						position: absolute;
-						text-align: center;
-						box-shadow: 0 0 6px;
-						border: 4px solid #fff;
-						z-index: 20;
-						display: none;
-						transition: all 0.3s ease;
-					}
-					&:hover{
-						.wrap{
+						.image-wrap {
 							display: block;
+							position: relative;
+							img {
+								min-width: 100%;
+							}
+						}
+						display: block;
+						text-align: center;
+						transition: all 0.3s ease;
+						position: relative;
+					}
+					.item:hover{
+						.wrap{
+							box-shadow: 0 0 6px;
+							.info{
+								box-shadow: 0 4px 6px;
+								display: block;
+							}
 						}
 					}
 					.cost-circle{
@@ -548,7 +546,12 @@
 					.info{
 						padding: 16px 10px;
 						background-color: #fff;
-						position: relative;
+						position: absolute;
+						z-index:200;
+						bottom: -20%;
+						right: -4px;
+						left: -4px;
+						display: none;
 					}
 					.head{
 						@include clearfix();
@@ -584,13 +587,13 @@
 				.item-list-view{
 					width: 100%;
 					.wrap{
-						padding: 0 0 0 60%;
+						padding: 0 0 0 40%;
 						bottom: 5.5px;
 						display: block;
 					}
 					.image-wrap{
 						img{
-							min-width: 60%;
+							min-width: 40%;
 						}
 					}
 					.info{
@@ -626,7 +629,6 @@
 			}
 		}
 	}
-}
 #footer{
 	background-color: $footer-bg;
 	.top-component{

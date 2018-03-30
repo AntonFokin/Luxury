@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1704d27-b53a-4c4f-9efb-bb711252c432" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/.gitattributes" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/AccordionJS.sublime-project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/AccordionJS.sublime-workspace" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/accordian.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/css/jquery.accordionjs.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/Responsive-Horizontal-jQuery-Accordion-Plugin-AccordionJS/js/jquery.accordionjs.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/libs/liteaccordion.jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/styles/scss/jquery.accordionjs.scss" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/common.js" afterPath="$PROJECT_DIR$/js/common.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/libs/liteaccordion.jquery.js" afterPath="$PROJECT_DIR$/libs/liteaccordion.jquery.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/prepros-6.config" afterPath="$PROJECT_DIR$/prepros-6.config" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/css/main.css" afterPath="$PROJECT_DIR$/styles/css/main.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scss/_media.scss" afterPath="$PROJECT_DIR$/styles/scss/_media.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/scss/main.scss" afterPath="$PROJECT_DIR$/styles/scss/main.scss" />
@@ -44,11 +30,12 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="4.714286">
-              <caret line="137" column="91" selection-start-line="137" selection-start-column="91" selection-end-line="137" selection-end-column="91" />
+            <state vertical-scroll-proportion="-17.642857">
+              <caret line="573" column="0" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
               <folding>
                 <element signature="n#div#0;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#li#1;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#li#0;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#2;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#3;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#4;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -56,17 +43,17 @@
                 <element signature="n#li#6;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#7;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
                 <element signature="n#li#8;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <marker date="1522250593513" expanded="true" signature="324:411" placeholder="..." />
+                <marker date="1522421556311" expanded="true" signature="324:411" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/styles/scss/main.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-16.285715">
-              <caret line="424" column="13" selection-start-line="424" selection-start-column="13" selection-end-line="424" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.56662935">
+              <caret line="512" column="43" selection-start-line="512" selection-start-column="43" selection-end-line="512" selection-end-column="43" />
               <folding />
             </state>
           </provider>
@@ -95,8 +82,8 @@
       <file leaf-file-name="_media.scss" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles/scss/_media.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.7142856">
-              <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+            <state vertical-scroll-proportion="-153.35715">
+              <caret line="257" column="40" selection-start-line="257" selection-start-column="40" selection-end-line="257" selection-end-column="40" />
               <folding />
             </state>
           </provider>
@@ -132,10 +119,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.17480999">
+            <state vertical-scroll-proportion="0.0">
               <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
               <folding />
             </state>
@@ -174,10 +161,10 @@
         <option value="$PROJECT_DIR$/styles/scss/jquery.accordionjs.scss" />
         <option value="$PROJECT_DIR$/styles/scss/liteaccordion.scss" />
         <option value="$PROJECT_DIR$/libs/liteaccordion.jquery.js" />
+        <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/styles/scss/_media.scss" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/styles/scss/main.scss" />
-        <option value="$PROJECT_DIR$/js/common.js" />
       </list>
     </option>
   </component>
@@ -398,7 +385,7 @@
     <option name="totallyTimeSpent" value="21756000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2260274" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
@@ -734,21 +721,30 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/styles/scss/_media.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.7142856">
-          <caret line="4" column="34" selection-start-line="4" selection-start-column="34" selection-end-line="4" selection-end-column="34" />
+        <state vertical-scroll-proportion="-153.35715">
+          <caret line="257" column="40" selection-start-line="257" selection-start-column="40" selection-end-line="257" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="4.714286">
-          <caret line="137" column="91" selection-start-line="137" selection-start-column="91" selection-end-line="137" selection-end-column="91" />
+        <state vertical-scroll-proportion="-17.642857">
+          <caret line="573" column="0" selection-start-line="573" selection-start-column="0" selection-end-line="573" selection-end-column="0" />
           <folding>
             <element signature="n#div#0;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#li#1;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#li#0;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#li#1;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#2;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#3;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#4;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -756,23 +752,15 @@
             <element signature="n#li#6;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#7;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#li#8;n#ul#0;n#div#2;n#section#0;n#div#1;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <marker date="1522250593513" expanded="true" signature="324:411" placeholder="..." />
+            <marker date="1522421556311" expanded="true" signature="324:411" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/styles/scss/main.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-16.285715">
-          <caret line="424" column="13" selection-start-line="424" selection-start-column="13" selection-end-line="424" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.17480999">
-          <caret line="40" column="25" selection-start-line="40" selection-start-column="25" selection-end-line="40" selection-end-column="25" />
+        <state vertical-scroll-proportion="0.56662935">
+          <caret line="512" column="43" selection-start-line="512" selection-start-column="43" selection-end-line="512" selection-end-column="43" />
           <folding />
         </state>
       </provider>

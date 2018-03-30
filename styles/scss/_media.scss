@@ -229,6 +229,12 @@
 	}
 }
 @media(max-width: 420px){
+	#header {
+		.logo {
+			height: 65px;
+			padding: 8px 8px;
+		}
+	}
 	#main {
 		#main-section {
 			.girls-grid {
@@ -244,8 +250,18 @@
 				}
 			}
 			.sort-section{
+				position: relative;
 				.sort-by{
-					margin-bottom: 15px;
+					margin-bottom: 25px;
+					float: right;
+					.items-show{
+						margin-right: 0;
+					}
+				}
+				.pagination{
+					position: absolute;
+					right: 0;
+					bottom: 4px;
 				}
 			}
 		}

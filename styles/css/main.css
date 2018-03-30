@@ -867,135 +867,137 @@ button, input {
           padding: 5.5px 5.5px;
           position: relative;
           width: 33.3%; }
-          #main #main-section .girls-grid .grid .item .image-wrap {
+        #main #main-section .girls-grid .grid .sale-label {
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 63px;
+          width: 63px;
+          overflow: hidden; }
+          #main #main-section .girls-grid .grid .sale-label .triangle {
+            height: 63px;
+            width: 88px;
+            text-align: center;
+            display: table;
+            -webkit-transform: rotate(-45deg) translate(-10%, -63%);
+            -ms-transform: rotate(-45deg) translate(-10%, -63%);
+            transform: rotate(-45deg) translate(-10%, -63%);
+            background-color: #ff5252; }
+          #main #main-section .girls-grid .grid .sale-label span {
+            display: table-cell;
+            vertical-align: bottom;
+            font-family: "droidBold";
+            font-size: 13px;
+            text-transform: uppercase;
+            color: #fff;
+            line-height: 26px; }
+        #main #main-section .girls-grid .grid .discount-label .triangle {
+          background-color: #4dd1da; }
+        #main #main-section .girls-grid .grid .discount-label span {
+          line-height: 20px; }
+        #main #main-section .girls-grid .grid .wrap {
+          display: block;
+          text-align: center;
+          -webkit-transition: all 0.3s ease;
+          -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+          position: relative; }
+          #main #main-section .girls-grid .grid .wrap .image-wrap {
             display: block;
             position: relative; }
-            #main #main-section .girls-grid .grid .item .image-wrap img {
+            #main #main-section .girls-grid .grid .wrap .image-wrap img {
               min-width: 100%; }
-          #main #main-section .girls-grid .grid .item .sale-label {
-            position: absolute;
-            top: 0;
-            left: 0;
-            height: 63px;
-            width: 63px;
-            overflow: hidden; }
-            #main #main-section .girls-grid .grid .item .sale-label .triangle {
-              height: 63px;
-              width: 88px;
-              text-align: center;
-              display: table;
-              -webkit-transform: rotate(-45deg) translate(-10%, -63%);
-              -ms-transform: rotate(-45deg) translate(-10%, -63%);
-              transform: rotate(-45deg) translate(-10%, -63%);
-              background-color: #ff5252; }
-            #main #main-section .girls-grid .grid .item .sale-label span {
-              display: table-cell;
-              vertical-align: bottom;
-              font-family: "droidBold";
-              font-size: 13px;
-              text-transform: uppercase;
-              color: #fff;
-              line-height: 26px; }
-          #main #main-section .girls-grid .grid .item .discount-label .triangle {
-            background-color: #4dd1da; }
-          #main #main-section .girls-grid .grid .item .discount-label span {
-            line-height: 20px; }
-          #main #main-section .girls-grid .grid .item .wrap {
-            top: 5.5px;
-            left: 5.5px;
-            right: 5.5px;
-            padding-top: 100%;
-            position: absolute;
-            text-align: center;
-            -webkit-box-shadow: 0 0 6px;
-            box-shadow: 0 0 6px;
-            border: 4px solid #fff;
-            z-index: 20;
-            display: none;
-            -webkit-transition: all 0.3s ease;
-            -o-transition: all 0.3s ease;
-            transition: all 0.3s ease; }
-          #main #main-section .girls-grid .grid .item:hover .wrap {
+        #main #main-section .girls-grid .grid .item:hover .wrap {
+          -webkit-box-shadow: 0 0 6px;
+          box-shadow: 0 0 6px; }
+          #main #main-section .girls-grid .grid .item:hover .wrap .info {
+            -webkit-box-shadow: 0 4px 6px;
+            box-shadow: 0 4px 6px;
             display: block; }
-          #main #main-section .girls-grid .grid .item .cost-circle {
-            position: absolute;
-            width: 69px;
-            height: 69px;
-            top: -50px;
-            left: 50%;
-            -webkit-transform: translate(-50%, 0);
-            -ms-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-            border-radius: 50%;
-            background: -webkit-gradient(linear, left bottom, left top, from(#fe5252), to(#ff8282));
-            background: -webkit-linear-gradient(bottom, #fe5252, #ff8282);
-            background: -o-linear-gradient(bottom, #fe5252, #ff8282);
-            background: linear-gradient(to top, #fe5252, #ff8282);
-            color: #fff;
-            padding: 26px 0;
-            z-index: -1; }
-            #main #main-section .girls-grid .grid .item .cost-circle .circle {
-              height: 100%; }
-              #main #main-section .girls-grid .grid .item .cost-circle .circle span {
-                line-height: 18px; }
-          #main #main-section .girls-grid .grid .item .info {
-            padding: 16px 10px;
-            background-color: #fff;
-            position: relative; }
-          #main #main-section .girls-grid .grid .item .head {
-            border-bottom: 1px solid #666666; }
-            #main #main-section .girls-grid .grid .item .head::after {
-              content: "";
-              display: block;
-              clear: both; }
-            #main #main-section .girls-grid .grid .item .head h4 {
-              font-size: 12px;
-              text-transform: uppercase;
-              color: #666666;
-              margin-bottom: 7px; }
-          #main #main-section .girls-grid .grid .item .bottom-info {
-            padding-top: 12px;
-            text-align: left; }
-            #main #main-section .girls-grid .grid .item .bottom-info > * {
-              display: inline-block; }
-            #main #main-section .girls-grid .grid .item .bottom-info .basket {
-              border-right: 1px solid #666666;
-              padding-right: 8px; }
-            #main #main-section .girls-grid .grid .item .bottom-info .add {
-              padding-left: 5px; }
-              #main #main-section .girls-grid .grid .item .bottom-info .add span {
-                color: #ff5252; }
-              #main #main-section .girls-grid .grid .item .bottom-info .add a {
-                line-height: 14px; }
-        #main #main-section .girls-grid .grid .item-list-view {
-          width: 100%; }
-          #main #main-section .girls-grid .grid .item-list-view .wrap {
-            padding: 0 0 0 60%;
-            bottom: 5.5px;
-            display: block; }
-          #main #main-section .girls-grid .grid .item-list-view .image-wrap img {
-            min-width: 60%; }
-          #main #main-section .girls-grid .grid .item-list-view .info {
-            height: 100%;
-            position: relative; }
-          #main #main-section .girls-grid .grid .item-list-view .cost-circle {
-            bottom: 15px;
-            top: auto;
-            z-index: 0; }
-          #main #main-section .girls-grid .grid .item-list-view .bottom-info {
-            text-align: center; }
-            #main #main-section .girls-grid .grid .item-list-view .bottom-info .basket {
-              margin-bottom: 10px;
-              border-right: none;
-              padding-right: 0; }
-              #main #main-section .girls-grid .grid .item-list-view .bottom-info .basket .img {
-                margin-bottom: 10px; }
-              #main #main-section .girls-grid .grid .item-list-view .bottom-info .basket span {
-                display: block; }
-            #main #main-section .girls-grid .grid .item-list-view .bottom-info .add {
+        #main #main-section .girls-grid .grid .cost-circle {
+          position: absolute;
+          width: 69px;
+          height: 69px;
+          top: -50px;
+          left: 50%;
+          -webkit-transform: translate(-50%, 0);
+          -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+          border-radius: 50%;
+          background: -webkit-gradient(linear, left bottom, left top, from(#fe5252), to(#ff8282));
+          background: -webkit-linear-gradient(bottom, #fe5252, #ff8282);
+          background: -o-linear-gradient(bottom, #fe5252, #ff8282);
+          background: linear-gradient(to top, #fe5252, #ff8282);
+          color: #fff;
+          padding: 26px 0;
+          z-index: -1; }
+          #main #main-section .girls-grid .grid .cost-circle .circle {
+            height: 100%; }
+            #main #main-section .girls-grid .grid .cost-circle .circle span {
+              line-height: 18px; }
+        #main #main-section .girls-grid .grid .info {
+          padding: 16px 10px;
+          background-color: #fff;
+          position: absolute;
+          z-index: 200;
+          bottom: -20%;
+          right: -4px;
+          left: -4px;
+          display: none; }
+        #main #main-section .girls-grid .grid .head {
+          border-bottom: 1px solid #666666; }
+          #main #main-section .girls-grid .grid .head::after {
+            content: "";
+            display: block;
+            clear: both; }
+          #main #main-section .girls-grid .grid .head h4 {
+            font-size: 12px;
+            text-transform: uppercase;
+            color: #666666;
+            margin-bottom: 7px; }
+        #main #main-section .girls-grid .grid .bottom-info {
+          padding-top: 12px;
+          text-align: left; }
+          #main #main-section .girls-grid .grid .bottom-info > * {
+            display: inline-block; }
+          #main #main-section .girls-grid .grid .bottom-info .basket {
+            border-right: 1px solid #666666;
+            padding-right: 8px; }
+          #main #main-section .girls-grid .grid .bottom-info .add {
+            padding-left: 5px; }
+            #main #main-section .girls-grid .grid .bottom-info .add span {
+              color: #ff5252; }
+            #main #main-section .girls-grid .grid .bottom-info .add a {
+              line-height: 14px; }
+      #main #main-section .girls-grid .item-list-view {
+        width: 100%; }
+        #main #main-section .girls-grid .item-list-view .wrap {
+          padding: 0 0 0 40%;
+          bottom: 5.5px;
+          display: block; }
+        #main #main-section .girls-grid .item-list-view .image-wrap img {
+          min-width: 40%; }
+        #main #main-section .girls-grid .item-list-view .info {
+          height: 100%;
+          position: relative; }
+        #main #main-section .girls-grid .item-list-view .cost-circle {
+          bottom: 15px;
+          top: auto;
+          z-index: 0; }
+        #main #main-section .girls-grid .item-list-view .bottom-info {
+          text-align: center; }
+          #main #main-section .girls-grid .item-list-view .bottom-info .basket {
+            margin-bottom: 10px;
+            border-right: none;
+            padding-right: 0; }
+            #main #main-section .girls-grid .item-list-view .bottom-info .basket .img {
+              margin-bottom: 10px; }
+            #main #main-section .girls-grid .item-list-view .bottom-info .basket span {
               display: block; }
-              #main #main-section .girls-grid .grid .item-list-view .bottom-info .add li {
-                margin-bottom: 5px; }
+          #main #main-section .girls-grid .item-list-view .bottom-info .add {
+            display: block; }
+            #main #main-section .girls-grid .item-list-view .bottom-info .add li {
+              margin-bottom: 5px; }
 
 #footer {
   background-color: #efefef; }
@@ -1252,9 +1254,21 @@ button, input {
     margin-bottom: 10px; } }
 
 @media (max-width: 420px) {
+  #header .logo {
+    height: 65px;
+    padding: 8px 8px; }
   #main #main-section .girls-grid .grid .item {
     width: 100%; }
   #main #main-section .girls-grid .grid .item-list-view .cost-circle {
     bottom: -5px; }
-  #main #main-section .sort-section .sort-by {
-    margin-bottom: 15px; } }
+  #main #main-section .sort-section {
+    position: relative; }
+    #main #main-section .sort-section .sort-by {
+      margin-bottom: 25px;
+      float: right; }
+      #main #main-section .sort-section .sort-by .items-show {
+        margin-right: 0; }
+    #main #main-section .sort-section .pagination {
+      position: absolute;
+      right: 0;
+      bottom: 4px; } }
