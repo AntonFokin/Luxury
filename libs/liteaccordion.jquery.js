@@ -16,8 +16,8 @@
     var LiteAccordion = function(elem, options) {
 
         var defaults = {
-            containerWidth : 705,                   // fixed (px)
-            containerHeight : 320,                  // fixed (px)
+            containerWidth : 700,                   // fixed (px)
+            containerHeight : 237,                  // fixed (px)
             headerWidth : 48,                       // fixed (px)
 
             activateOn : 'click',                   // click or mouseover
@@ -125,11 +125,10 @@
                 // set style properties
                 setStyles : function() {
                     // set container height and width, theme and corner style
-                    console.log(elem[0]);
-                    elem[0].style.maxWidth = "100%";
+                    elem[0].style.maxWidth = "98.9%";
                     elem
-                        .width("100%")
-                        .height(settings.containerHeight)
+                        .width("99%")
+                        .height(settings.containerHeight - 10)
                         .addClass('liteAccordion')
                         .addClass(settings.rounded && 'rounded')
                         .addClass(settings.theme);
