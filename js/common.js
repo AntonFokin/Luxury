@@ -63,7 +63,6 @@ $(document).ready(function() {
 		$(".grid-view img").attr("src", "images/icons/grid.png");
 		$(".list-view img").attr("src", "images/icons/list-active.png")
 	});
-
 //ACTIVE LISTS
 	$(".localization, .currency").on("click", function(event){
 		event.preventDefault();

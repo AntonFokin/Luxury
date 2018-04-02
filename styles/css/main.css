@@ -457,10 +457,6 @@ button, input {
   margin: 0 auto;
   position: relative;
   padding: 0 20px; }
-  .container::after {
-    content: "";
-    display: block;
-    clear: both; }
 
 .classic-list h3 {
   font-size: 15px;
@@ -496,12 +492,13 @@ button, input {
   .stars ul {
     display: inline-block;
     margin: 0 auto; }
-    .stars ul::after {
-      content: "";
-      display: block;
-      clear: both; }
   .stars li {
     display: inline-block; }
+
+.clearfix::after, .container::after, .stars ul::after, .f-btn-wrap::after, #header .bottom-component::after, #main #main-section .sort-section::after, #main #main-section .sort-bottom-section::after, #main #main-section .girls-grid::after, #main #main-section .girls-grid .grid::after, #main #main-section .girls-grid .grid .head::after, #main #main-section .girls-grid .item-list-view .wrap::after {
+  content: "";
+  display: block;
+  clear: both; }
 
 .s-btn, .f-btn-wrap .f-btn {
   display: none;
@@ -542,10 +539,6 @@ button, input {
 
 .f-btn-wrap {
   display: none; }
-  .f-btn-wrap::after {
-    content: "";
-    display: block;
-    clear: both; }
   .f-btn-wrap .f-btn {
     top: 26px;
     left: 20px;
@@ -659,10 +652,6 @@ button, input {
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease;
     position: relative; }
-    #header .bottom-component::after {
-      content: "";
-      display: block;
-      clear: both; }
     #header .bottom-component .horizontal-nav {
       padding-top: 25px;
       float: left; }
@@ -793,10 +782,6 @@ button, input {
       line-height: 20px;
       border-bottom: 1px solid #e9e9e9;
       margin-bottom: 20px; }
-      #main #main-section .sort-section::after {
-        content: "";
-        display: block;
-        clear: both; }
       #main #main-section .sort-section .items-view {
         float: left; }
       #main #main-section .sort-section .grid-view, #main #main-section .sort-section .list-view {
@@ -812,7 +797,8 @@ button, input {
         #main #main-section .sort-section .sort .active-link, #main #main-section .sort-section .items-show .active-link {
           display: inline-block;
           border: none;
-          padding: 0 5px; }
+          padding: 0 5px;
+          cursor: pointer; }
         #main #main-section .sort-section .sort .sort-dropdown, #main #main-section .sort-section .items-show .sort-dropdown {
           position: absolute;
           z-index: 100;
@@ -846,22 +832,10 @@ button, input {
     #main #main-section .sort-bottom-section {
       border-top: 1px solid #e9e9e9;
       border-bottom: none; }
-      #main #main-section .sort-bottom-section::after {
-        content: "";
-        display: block;
-        clear: both; }
     #main #main-section .girls-grid {
       margin-bottom: 25px; }
-      #main #main-section .girls-grid::after {
-        content: "";
-        display: block;
-        clear: both; }
       #main #main-section .girls-grid .grid {
         margin: 0 -5.5px; }
-        #main #main-section .girls-grid .grid::after {
-          content: "";
-          display: block;
-          clear: both; }
         #main #main-section .girls-grid .grid .item {
           float: left;
           padding: 5.5px 5.5px;
@@ -910,7 +884,7 @@ button, input {
         #main #main-section .girls-grid .grid .item:hover .wrap {
           -webkit-box-shadow: 0 0 6px;
           box-shadow: 0 0 6px; }
-          #main #main-section .girls-grid .grid .item:hover .wrap .info {
+          #main #main-section .girls-grid .grid .item:hover .wrap .info-component {
             -webkit-box-shadow: 0 4px 6px;
             box-shadow: 0 4px 6px;
             display: block; }
@@ -935,21 +909,18 @@ button, input {
             height: 100%; }
             #main #main-section .girls-grid .grid .cost-circle .circle span {
               line-height: 18px; }
-        #main #main-section .girls-grid .grid .info {
-          padding: 16px 10px;
-          background-color: #fff;
+        #main #main-section .girls-grid .grid .info-component {
           position: absolute;
           z-index: 200;
           bottom: -20%;
           right: -4px;
           left: -4px;
           display: none; }
+        #main #main-section .girls-grid .grid .info {
+          background-color: #fff;
+          padding: 16px 10px; }
         #main #main-section .girls-grid .grid .head {
           border-bottom: 1px solid #666666; }
-          #main #main-section .girls-grid .grid .head::after {
-            content: "";
-            display: block;
-            clear: both; }
           #main #main-section .girls-grid .grid .head h4 {
             font-size: 12px;
             text-transform: uppercase;
@@ -970,16 +941,26 @@ button, input {
             #main #main-section .girls-grid .grid .bottom-info .add a {
               line-height: 14px; }
       #main #main-section .girls-grid .item-list-view {
-        width: 100%; }
+        width: 100% !important; }
         #main #main-section .girls-grid .item-list-view .wrap {
-          padding: 0 0 0 40%;
+          padding: 0  40% 0 0;
           bottom: 5.5px;
           display: block; }
-        #main #main-section .girls-grid .item-list-view .image-wrap img {
-          min-width: 40%; }
-        #main #main-section .girls-grid .item-list-view .info {
+        #main #main-section .girls-grid .item-list-view .image-wrap {
+          float: left; }
+          #main #main-section .girls-grid .item-list-view .image-wrap img {
+            min-width: 40%; }
+        #main #main-section .girls-grid .item-list-view .info-component {
           height: 100%;
-          position: relative; }
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          right: 0;
+          left: 60%;
+          display: block; }
+        #main #main-section .girls-grid .item-list-view:hover .info-component {
+          -webkit-box-shadow: none !important;
+          box-shadow: none !important; }
         #main #main-section .girls-grid .item-list-view .cost-circle {
           bottom: 15px;
           top: auto;
@@ -1041,7 +1022,7 @@ button, input {
         #footer .top-component .newsletter-section .email-form input::placeholder {
           color: #cdcdcd;
           font-size: 11px; }
-        #footer .top-component .newsletter-section .email-form a {
+        #footer .top-component .newsletter-section .email-form button {
           text-align: center;
           position: absolute;
           right: 0;
@@ -1260,7 +1241,10 @@ button, input {
   #main #main-section .girls-grid .grid .item {
     width: 100%; }
   #main #main-section .girls-grid .grid .item-list-view .cost-circle {
-    bottom: -5px; }
+    bottom: 8px;
+    left: -35%; }
+  #main #main-section .girls-grid .grid .info-component .info {
+    padding-bottom: 2px; }
   #main #main-section .sort-section {
     position: relative; }
     #main #main-section .sort-section .sort-by {
@@ -1271,4 +1255,6 @@ button, input {
     #main #main-section .sort-section .pagination {
       position: absolute;
       right: 0;
-      bottom: 4px; } }
+      bottom: 4px; }
+  #footer .top-component {
+    height: 758px; } }

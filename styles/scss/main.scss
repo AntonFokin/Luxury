@@ -1,7 +1,6 @@
 @import "fonts";
 @import "vars";
 @import "reset";
-@import "_mixins/clearfix";
 @import "_mixins/list-style";
 @import "liteaccordion";
 
@@ -21,7 +20,7 @@
 	margin: 0 auto;
 	position: relative;
 	padding: 0 20px;
-	@include clearfix();
+	@extend .clearfix;
 }
 .classic-list{
 	@include list-style();
@@ -34,16 +33,20 @@
 	ul{
 		display: inline-block;
 		margin: 0 auto;
-		@include clearfix();
+		@extend .clearfix;
 	}
 	li{
 		display: inline-block;
 	}
 	margin-bottom: 8px;
 }
-
+.clearfix::after {
+	content: "";
+	display: block;
+	clear: both;
+}
 //END COMMON STYLES
-//BUTTON START
+//BUTTON STYLE START
 .s-btn {
 	display: none;
 	height: 24px;
@@ -85,7 +88,7 @@
 	}
 }
 .f-btn-wrap{
-	@include clearfix();
+	@extend .clearfix;
 	display: none;
 	.f-btn{
 		@extend .s-btn;
@@ -210,7 +213,7 @@
 
 	}
 	.bottom-component{
-		@include clearfix();
+		@extend .clearfix;
 		transition: all 0.5s ease;
 		position: relative;
 		.horizontal-nav{
@@ -382,7 +385,7 @@
 			}
 		}
 		.sort-section{
-			@include clearfix();
+			@extend .clearfix;
 			padding: 10px 0;
 			text-align: center;
 			line-height: 20px;
@@ -407,6 +410,7 @@
 					display: inline-block;
 					border: none;
 					padding: 0 5px;
+					cursor: pointer;
 				}
 				.sort-dropdown{
 					position: absolute;
@@ -452,15 +456,15 @@
 			}
 		}
 		.sort-bottom-section{
-			@include clearfix();
+			@extend .clearfix;
 			border-top: 1px solid #e9e9e9;
 			border-bottom: none;
 		}
 		.girls-grid{
-			@include clearfix();
+			@extend .clearfix;
 			margin-bottom: 25px;
 			.grid{
-				@include clearfix();
+				@extend .clearfix;
 				margin: 0 -5.5px;
 				.item{
 					float: left;
@@ -517,7 +521,7 @@
 					.item:hover{
 						.wrap{
 							box-shadow: 0 0 6px;
-							.info{
+							.info-component{
 								box-shadow: 0 4px 6px;
 								display: block;
 							}
@@ -543,9 +547,7 @@
 						}
 
 					}
-					.info{
-						padding: 16px 10px;
-						background-color: #fff;
+					.info-component{
 						position: absolute;
 						z-index:200;
 						bottom: -20%;
@@ -553,8 +555,12 @@
 						left: -4px;
 						display: none;
 					}
+					.info{
+						background-color: #fff;
+						padding: 16px 10px;
+					}
 					.head{
-						@include clearfix();
+						@extend .clearfix;
 						border-bottom: 1px solid $font-color;
 						h4{
 							font-size: 12px;
@@ -585,20 +591,32 @@
 					}
 				}
 				.item-list-view{
-					width: 100%;
+					width: 100% !important;
 					.wrap{
-						padding: 0 0 0 40%;
+						@extend .clearfix;
+						padding: 0  40% 0 0;
 						bottom: 5.5px;
 						display: block;
 					}
 					.image-wrap{
+						float: left;
 						img{
 							min-width: 40%;
 						}
 					}
-					.info{
+					.info-component{
 						height: 100%;
-						position: relative;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						right: 0;
+						left: 60%;
+						display: block;
+					}
+					&:hover{
+						.info-component{
+							box-shadow: none !important;
+						}
 					}
 					.cost-circle{
 						bottom: 15px;
@@ -669,7 +687,7 @@
 					color: #cdcdcd;
 					font-size: 11px;
 				}
-				a{
+				button{
 					text-align: center;
 					position: absolute;
 					right: 0;
