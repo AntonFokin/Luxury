@@ -26,7 +26,7 @@
 	@include list-style();
 }
 .classic-border{
-	box-shadow: 0 0 2px;
+	box-shadow: 0 0 2px rgba( 0, 0, 0, 0.3);
 	border: 4px solid #fff;
 }
 .stars{
@@ -120,7 +120,7 @@
 //BUTTON END
 #header{
 	border-top: 2px solid $red;
-	box-shadow: 0 0 3px;
+	box-shadow: 0 0 3px rgba( 0, 0, 0, 0.3);
 	position: relative;
 	.logo{
 		display: block;
@@ -355,13 +355,13 @@
 		.bottom-image{
 			.image{
 				display: inline-block;
-				box-shadow: 0 0 2px;
+				box-shadow: 0 0 2px rgba( 0, 0, 0, 0.3);
 				border: 4px solid #fff;
 			}
 		}
 	}
 	#main-section{
-		overflow-x: hidden;
+		overflow: hidden;
 		padding: 2px 1px;
 		#two{
 			margin-bottom: 22px;
@@ -471,6 +471,15 @@
 					padding: 5.5px 5.5px;
 					position: relative;
 					width: 33.3%;
+					&:hover{
+						.wrap{
+							box-shadow: 0 0 6px rgba( 0, 0, 0, 0.3);
+							.info-component{
+								box-shadow: 0 4px 6px rgba( 0, 0, 0, 0.3);
+								display: block;
+							}
+						}
+					}
 					}
 					.sale-label{
 						position: absolute;
@@ -506,24 +515,23 @@
 						}
 					}
 					.wrap{
+						@extend .clearfix;
+						display: block;
+						text-align: center;
+						transition: box-shadow 0.3s ease;
+						position: relative;
 						.image-wrap {
 							display: block;
 							position: relative;
+							height: 0;
+							padding-top: 127%;
+							width: 218px;
 							img {
 								min-width: 100%;
-							}
-						}
-						display: block;
-						text-align: center;
-						transition: all 0.3s ease;
-						position: relative;
-					}
-					.item:hover{
-						.wrap{
-							box-shadow: 0 0 6px;
-							.info-component{
-								box-shadow: 0 4px 6px;
-								display: block;
+								position: absolute;
+								left: 50%;
+								top: 50%;
+								transform: translate(-50%, -50%);
 							}
 						}
 					}
@@ -556,6 +564,7 @@
 						display: none;
 					}
 					.info{
+						height: 100%;
 						background-color: #fff;
 						padding: 16px 10px;
 					}
@@ -594,24 +603,19 @@
 					width: 100% !important;
 					.wrap{
 						@extend .clearfix;
-						padding: 0  40% 0 0;
-						bottom: 5.5px;
 						display: block;
-					}
-					.image-wrap{
-						float: left;
-						img{
-							min-width: 40%;
+						.image-wrap{
+							float: left;
 						}
-					}
-					.info-component{
-						height: 100%;
-						position: absolute;
-						top: 0;
-						bottom: 0;
-						right: 0;
-						left: 60%;
-						display: block;
+						.info-component{
+							height: 100%;
+							position: absolute;
+							top: 0;
+							bottom: 0;
+							right: 0;
+							left: 60%;
+							display: block;
+						}
 					}
 					&:hover{
 						.info-component{

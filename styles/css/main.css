@@ -483,8 +483,8 @@ button, input {
     color: #ff5252; }
 
 .classic-border {
-  -webkit-box-shadow: 0 0 2px;
-  box-shadow: 0 0 2px;
+  -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
   border: 4px solid #fff; }
 
 .stars {
@@ -495,7 +495,7 @@ button, input {
   .stars li {
     display: inline-block; }
 
-.clearfix::after, .container::after, .stars ul::after, .f-btn-wrap::after, #header .bottom-component::after, #main #main-section .sort-section::after, #main #main-section .sort-bottom-section::after, #main #main-section .girls-grid::after, #main #main-section .girls-grid .grid::after, #main #main-section .girls-grid .grid .head::after, #main #main-section .girls-grid .item-list-view .wrap::after {
+.clearfix::after, .container::after, .stars ul::after, .f-btn-wrap::after, #header .bottom-component::after, #main #main-section .sort-section::after, #main #main-section .sort-bottom-section::after, #main #main-section .girls-grid::after, #main #main-section .girls-grid .grid::after, #main #main-section .girls-grid .grid .wrap::after, #main #main-section .girls-grid .grid .head::after, #main #main-section .girls-grid .item-list-view .wrap::after {
   content: "";
   display: block;
   clear: both; }
@@ -569,8 +569,8 @@ button, input {
 
 #header {
   border-top: 2px solid #ff5252;
-  -webkit-box-shadow: 0 0 3px;
-  box-shadow: 0 0 3px;
+  -webkit-box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
   position: relative; }
   #header .logo {
     display: block;
@@ -756,11 +756,11 @@ button, input {
         padding-top: 11px; }
     #main #nav-side .bottom-image .image {
       display: inline-block;
-      -webkit-box-shadow: 0 0 2px;
-      box-shadow: 0 0 2px;
+      -webkit-box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 2px rgba(0, 0, 0, 0.3);
       border: 4px solid #fff; }
   #main #main-section {
-    overflow-x: hidden;
+    overflow: hidden;
     padding: 2px 1px; }
     #main #main-section #two {
       margin-bottom: 22px; }
@@ -841,6 +841,13 @@ button, input {
           padding: 5.5px 5.5px;
           position: relative;
           width: 33.3%; }
+          #main #main-section .girls-grid .grid .item:hover .wrap {
+            -webkit-box-shadow: 0 0 6px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 0 6px rgba(0, 0, 0, 0.3); }
+            #main #main-section .girls-grid .grid .item:hover .wrap .info-component {
+              -webkit-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+              box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+              display: block; }
         #main #main-section .girls-grid .grid .sale-label {
           position: absolute;
           top: 0;
@@ -872,22 +879,26 @@ button, input {
         #main #main-section .girls-grid .grid .wrap {
           display: block;
           text-align: center;
-          -webkit-transition: all 0.3s ease;
-          -o-transition: all 0.3s ease;
-          transition: all 0.3s ease;
+          -webkit-transition: -webkit-box-shadow 0.3s ease;
+          transition: -webkit-box-shadow 0.3s ease;
+          -o-transition: box-shadow 0.3s ease;
+          transition: box-shadow 0.3s ease;
+          transition: box-shadow 0.3s ease, -webkit-box-shadow 0.3s ease;
           position: relative; }
           #main #main-section .girls-grid .grid .wrap .image-wrap {
             display: block;
-            position: relative; }
+            position: relative;
+            height: 0;
+            padding-top: 127%;
+            width: 218px; }
             #main #main-section .girls-grid .grid .wrap .image-wrap img {
-              min-width: 100%; }
-        #main #main-section .girls-grid .grid .item:hover .wrap {
-          -webkit-box-shadow: 0 0 6px;
-          box-shadow: 0 0 6px; }
-          #main #main-section .girls-grid .grid .item:hover .wrap .info-component {
-            -webkit-box-shadow: 0 4px 6px;
-            box-shadow: 0 4px 6px;
-            display: block; }
+              min-width: 100%;
+              position: absolute;
+              left: 50%;
+              top: 50%;
+              -webkit-transform: translate(-50%, -50%);
+              -ms-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%); }
         #main #main-section .girls-grid .grid .cost-circle {
           position: absolute;
           width: 69px;
@@ -917,6 +928,7 @@ button, input {
           left: -4px;
           display: none; }
         #main #main-section .girls-grid .grid .info {
+          height: 100%;
           background-color: #fff;
           padding: 16px 10px; }
         #main #main-section .girls-grid .grid .head {
@@ -943,21 +955,17 @@ button, input {
       #main #main-section .girls-grid .item-list-view {
         width: 100% !important; }
         #main #main-section .girls-grid .item-list-view .wrap {
-          padding: 0  40% 0 0;
-          bottom: 5.5px;
           display: block; }
-        #main #main-section .girls-grid .item-list-view .image-wrap {
-          float: left; }
-          #main #main-section .girls-grid .item-list-view .image-wrap img {
-            min-width: 40%; }
-        #main #main-section .girls-grid .item-list-view .info-component {
-          height: 100%;
-          position: absolute;
-          top: 0;
-          bottom: 0;
-          right: 0;
-          left: 60%;
-          display: block; }
+          #main #main-section .girls-grid .item-list-view .wrap .image-wrap {
+            float: left; }
+          #main #main-section .girls-grid .item-list-view .wrap .info-component {
+            height: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 60%;
+            display: block; }
         #main #main-section .girls-grid .item-list-view:hover .info-component {
           -webkit-box-shadow: none !important;
           box-shadow: none !important; }
@@ -1101,8 +1109,6 @@ button, input {
       #main #main-section .girls-grid .grid .item .bottom-info .add {
         padding: 12px 0 0 0;
         display: block; }
-    #main #main-section .girls-grid .grid .item-list-view {
-      width: 100%; }
   #two {
     display: none; } }
 
@@ -1168,6 +1174,13 @@ button, input {
     left: -100%; }
   #main .active-nav-side {
     left: 0 !important; }
+  #main #main-section .girls-grid .grid .item {
+    width: 50%; }
+  #main #main-section .girls-grid .grid .item-list-view {
+    width: 100%; }
+    #main #main-section .girls-grid .grid .item-list-view .wrap .image-wrap {
+      width: 324.109px;
+      padding-top: 412.063px; }
   #footer .top-component {
     height: 415px; }
     #footer .top-component .newsletter-section {
@@ -1186,10 +1199,6 @@ button, input {
   #header .top-component .account-group {
     width: 100%; }
   #header .bottom-component {
-    width: 100%; }
-  #main #main-section .girls-grid .grid .item {
-    width: 50%; }
-  #main #main-section .girls-grid .grid .item-list-view {
     width: 100%; }
   #footer .top-component {
     height: 728px; }
@@ -1220,6 +1229,13 @@ button, input {
       display: block;
       text-align: center; } }
 
+@media (max-width: 590px) {
+  #main #main-section .girls-grid .grid .item-list-view .wrap .image-wrap {
+    width: 244.109px;
+    padding-top: 309.063px; }
+  #main #main-section .girls-grid .grid .item-list-view .wrap .info-component {
+    left: 70%; } }
+
 @media (max-width: 480px) {
   #header .top-component {
     padding: 15px 73px 1rem 0; }
@@ -1238,8 +1254,6 @@ button, input {
   #header .logo {
     height: 65px;
     padding: 8px 8px; }
-  #main #main-section .girls-grid .grid .item {
-    width: 100%; }
   #main #main-section .girls-grid .grid .item-list-view .cost-circle {
     bottom: 8px;
     left: -35%; }
@@ -1248,13 +1262,11 @@ button, input {
   #main #main-section .sort-section {
     position: relative; }
     #main #main-section .sort-section .sort-by {
-      margin-bottom: 25px;
       float: right; }
       #main #main-section .sort-section .sort-by .items-show {
         margin-right: 0; }
     #main #main-section .sort-section .pagination {
-      position: absolute;
-      right: 0;
-      bottom: 4px; }
+      margin-top: 15px;
+      clear: left; }
   #footer .top-component {
     height: 758px; } }

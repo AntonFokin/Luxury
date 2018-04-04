@@ -4,10 +4,10 @@ $(document).ready(function() {
 		event.preventDefault();
 		var input = $(this).siblings("input")[0];
 		$(input).toggleClass("active-search");
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 	$(".input-search").on("click", function(event){
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 
 // MY SANDWICHES
@@ -18,7 +18,7 @@ $(document).ready(function() {
 		if(accountGroup.hasClass("active-m-menu")){
 			$(accountGroup).removeClass("active-m-menu");
 		}
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 	$(".account-info").on("click", function(event){
 		$(".account-group").toggleClass("active-m-menu");
@@ -27,7 +27,7 @@ $(document).ready(function() {
 			$(bottomComponent).removeClass("active-m-menu");
 			$(".s-btn").removeClass('btn-animation');
 		}
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 
 	$("body").on('click', function(){
@@ -46,7 +46,7 @@ $(document).ready(function() {
 		$(this).toggleClass("f-btn-animation");
 		var navSide = $("#nav-side");
 		$(navSide).toggleClass("active-nav-side");
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 
 //CHANGE GRID VIEW
@@ -54,27 +54,30 @@ $(document).ready(function() {
 		event.preventDefault();
 		$(".grid .item").removeClass("item-list-view");
 		$(".grid-view img").attr("src", "images/icons/grid-active.png");
-		$(".list-view img").attr("src", "images/icons/list.png")
+		$(".list-view img").attr("src", "images/icons/list.png");
 	});
 
 	$(".list-view a").on("click", function(event){
 		event.preventDefault();
+		var item = $(".grid .item .image-wrap");
+		$(item).css("width", "248.281");
+		$(item).css("paddingTop", "314.484px");
 		$(".grid .item").addClass("item-list-view");
 		$(".grid-view img").attr("src", "images/icons/grid.png");
-		$(".list-view img").attr("src", "images/icons/list-active.png")
+		$(".list-view img").attr("src", "images/icons/list-active.png");
 	});
 //ACTIVE LISTS
 	$(".localization, .currency").on("click", function(event){
 		event.preventDefault();
 		var target = $(this).children("ul");
 		$(target).toggleClass("active-localization-list");
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 	$(".active-link").on("click", function(event){
 		event.preventDefault();
 		var target = $(this).siblings(".sort-dropdown");
 		$(target).toggleClass("active-items-sort-show");
-		event.stopPropagation()
+		event.stopPropagation();
 	});
 // SMOOTH SCROLLING
 //	$("").on("click", "a", function (event) {
